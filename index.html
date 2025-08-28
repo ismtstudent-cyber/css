@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Developer Portfolio | CET138</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+  <!-- Animated Background -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0a0a0f] via-[#161625] to-[#0a0a0f]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,212,255,0.1),transparent_50%)]"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="glass-card mx-4 mt-8 mb-16 p-8 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 glow-text">Digital Development Portfolio</h1>
+    <p class="text-xl text-[var(--text-secondary)] mb-6 typewriter">By Anup chapagai  | Exploring Advanced Web Technologies</p>
+    
+    <nav class="flex flex-wrap justify-center gap-4 mt-8">
+      <a href="#fullstack" class="tech-badge hover:scale-110 transition-transform">Full Stack</a>
+      <a href="#html" class="tech-badge hover:scale-110 transition-transform">HTML</a>
+      <a href="#css" class="tech-badge hover:scale-110 transition-transform">CSS</a>
+      <a href="#bootstrap" class="tech-badge hover:scale-110 transition-transform">Bootstrap</a>
+      <a href="#javascript" class="tech-badge hover:scale-110 transition-transform">JavaScript</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4 pb-20 max-w-6xl">
+    <!-- Full Stack Section -->
+    <section id="fullstack" class="glass-card p-8 mb-12 gradient-border hover-lift">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent)]">Full Stack Development Ecosystem</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+            Full Stack Development refers to the comprehensive practice of building complete software applications, encompassing both client-side and server-side layers. A full stack developer masters all development phases, from the visual user interface to backend logic and database architecture.
+          </p>
+          <div class="flex flex-wrap mb-6">
+            <span class="tech-badge">Frontend</span>
+            <span class="tech-badge">Backend</span>
+            <span class="tech-badge">Database</span>
+            <span class="tech-badge">APIs</span>
+          </div>
+        </div>
+        <div class="code-block">
+          <pre><code class="text-[var(--accent)]"><form action="/api/submit" method="POST">
+  <label>Name: <input type="text" name="name" required></label>
+  <label>Email: <input type="email" name="email" required></label>
+  <button type="submit">Send Data</button>
+</form></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- HTML Section -->
+    <section id="html" class="glass-card p-8 mb-12 gradient-border hover-lift">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent)]">HTML Foundation</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+            HTML serves as the fundamental structural language for web content creation. It employs a system of semantic tags to define page elements like headings, paragraphs, images, and navigation.
+          </p>
+          <div class="tech-badge">Semantic HTML</div>
+          <div class="tech-badge">Accessibility</div>
+          <div class="tech-badge">SEO Optimization</div>
+        </div>
+        <div class="code-block">
+          <pre><code class="text-[var(--accent)]"><header>
+  <h1>Digital Portfolio</h1>
+  <nav aria-label="Main navigation">
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS Section -->
+    <section id="css" class="glass-card p-8 mb-12 gradient-border hover-lift">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent)]">CSS Styling System</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+            CSS transforms HTML structure into visually engaging experiences. It controls presentation aspects including color schemes, typography, layout systems, and responsive behavior.
+          </p>
+          <div class="flex flex-wrap mb-6">
+            <span class="tech-badge">Flexbox</span>
+            <span class="tech-badge">Grid</span>
+            <span class="tech-badge">Animations</span>
+            <span class="tech-badge">Responsive</span>
+          </div>
+        </div>
+        <div class="code-block">
+          <pre><code class="text-[var(--accent)]">.responsive-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Section -->
+    <section id="bootstrap" class="glass-card p-8 mb-12 gradient-border hover-lift">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent)]">Bootstrap Framework</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+            Bootstrap accelerates responsive web development through its comprehensive component library.
+          </p>
+          <div class="flex flex-wrap mb-6">
+            <span class="tech-badge">Components</span>
+            <span class="tech-badge">Utilities</span>
+            <span class="tech-badge">Responsive</span>
+            <span class="tech-badge">Theming</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="glass-card p-6">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/711ab6c8-bd45-4492-b940-03c9973338eb.png" alt="Modern web application interface with dark theme and glowing accents showing a project dashboard" class="w-full rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2">Project Showcase</h3>
+            <p class="text-sm text-[var(--text-secondary)]">Interactive dashboard built with Bootstrap components</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="javascript" class="glass-card p-8 mb-12 gradient-border hover-lift">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent)]">JavaScript Interactivity</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+            JavaScript enables dynamic web experiences through DOM manipulation and event handling.
+          </p>
+          <div class="flex flex-wrap mb-6">
+            <span class="tech-badge">DOM Manipulation</span>
+            <span class="tech-badge">Event Handling</span>
+            <span class="tech-badge">API Integration</span>
+            <span class="tech-badge">Validation</span>
+          </div>
+        </div>
+        <div>
+          <form id="form" class="glass-card p-6">
+            <div class="form-control">
+              <input type="text" id="username" placeholder="Enter your username" />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="email" id="email" placeholder="Enter your email" />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="password" id="password" placeholder="Create password" />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="password" id="password2" placeholder="Confirm password" />
+              <small>Error message</small>
+            </div>
+            <button type="submit" class="w-full">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="glass-card mx-4 p-8 text-center">
+    <p class="text-[var(--text-secondary)]">
+      © 2025 Dipesh Pokhrel | Advanced Web Development Portfolio
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
